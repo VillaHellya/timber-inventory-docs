@@ -1,6 +1,6 @@
-# 📚 Documentație Legală - Predare Masa Lemnoasă
+# 📚 Documentație Legală - Inventar Masa Lemnoasă
 
-Acest folder conține documentația legală GDPR-compliant pentru aplicația "Predare Masa Lemnoasă".
+Acest folder conține documentația legală GDPR-compliant pentru aplicația "Inventar Masa Lemnoasă".
 
 ## 📁 Conținut
 
@@ -14,7 +14,7 @@ Acest folder conține documentația legală GDPR-compliant pentru aplicația "Pr
 ### Pasul 1: Creează Repository GitHub
 
 1. Mergi pe https://github.com/new
-2. Nume repository: `predare-masa-lemnoasa-docs`
+2. Nume repository: `timber-inventory-docs`
 3. Setează ca **Public**
 4. NU adăuga README, .gitignore sau License
 5. Click "Create repository"
@@ -23,7 +23,7 @@ Acest folder conține documentația legală GDPR-compliant pentru aplicația "Pr
 
 ```bash
 cd docs
-git remote add origin https://github.com/YOUR_USERNAME/predare-masa-lemnoasa-docs.git
+git remote add origin https://github.com/YOUR_USERNAME/timber-inventory-docs.git
 git branch -M main
 git push -u origin main
 ```
@@ -39,15 +39,15 @@ git push -u origin main
 
 După 1-2 minute, site-ul va fi disponibil la:
 ```
-https://YOUR_USERNAME.github.io/predare-masa-lemnoasa-docs/
+https://YOUR_USERNAME.github.io/timber-inventory-docs/
 ```
 
 ## 🔗 Link-uri pentru Google Play Console
 
 După deploy, folosește aceste URL-uri:
 
-- **Privacy Policy:** `https://YOUR_USERNAME.github.io/predare-masa-lemnoasa-docs/privacy-policy.html`
-- **Terms of Service:** `https://YOUR_USERNAME.github.io/predare-masa-lemnoasa-docs/terms-of-service.html`
+- **Privacy Policy:** `https://YOUR_USERNAME.github.io/timber-inventory-docs/privacy-policy.html`
+- **Terms of Service:** `https://YOUR_USERNAME.github.io/timber-inventory-docs/terms-of-service.html`
 
 ## 📧 Contact
 
