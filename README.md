@@ -51,8 +51,8 @@ După deploy, folosește aceste URL-uri:
 
 ## 📧 Contact
 
-MAP Software - Mircea Popa
-Email: support@mapsoftware.ro
+MAP Software
+Email: map.dezvoltare@gmail.com
 
 ## 📝 License
 
