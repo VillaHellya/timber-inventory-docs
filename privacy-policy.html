@@ -122,16 +122,23 @@
         </ul>
         <p class="highlight">Android ID este folosit doar pentru validare licență și nu poate fi folosit pentru identificare personală.</p>
 
-        <h3>1.3 Date Colectate Automat (Log Data)</h3>
-        <p>În cazul erorilor aplicației, colectăm automat prin Firebase Crashlytics:</p>
+        <h3>1.3 Date Colectate Automat (Log Data & Device Info)</h3>
+        <p><strong>A) Crash Reports (Firebase Crashlytics):</strong></p>
         <ul>
-            <li>Informații dispozitiv: Model, versiune Android, producător</li>
             <li>Adresă IP: Pentru geo-localizare crash-uri (nu este stocată permanent)</li>
             <li>Timestamp: Data și ora erorii</li>
             <li>Stack trace: Detalii tehnice despre eroare (nu conține date personale)</li>
             <li>Configurație aplicație: Versiune app, setări active la momentul crash-ului</li>
         </ul>
-        <p>Aceste date sunt colectate DOAR în caz de crash și sunt folosite exclusiv pentru debugging și îmbunătățirea stabilității aplicației.</p>
+        <p><strong>B) Informații Dispozitiv (la acceptare ToS):</strong></p>
+        <ul>
+            <li>Brand și model dispozitiv (ex: Samsung Galaxy S21)</li>
+            <li>Versiune OS (ex: Android 13)</li>
+            <li>App Install ID (identificator unic per instalare, NU persistă după dezinstalare)</li>
+            <li>Tip dispozitiv (fizic vs. emulator)</li>
+        </ul>
+        <p><strong>Scopuri colectare device info:</strong> Identificare indirectă a utilizatorului în caz de reclamații/dispute, suport tehnic, debugging probleme specifice dispozitivelor.</p>
+        <p>Aceste date sunt colectate DOAR în caz de crash (Crashlytics) sau la acceptare ToS (device info) și sunt folosite exclusiv pentru debugging și îmbunătățirea stabilității aplicației.</p>
 
         <h2>2. Cum Folosim Datele</h2>
 
@@ -161,8 +168,8 @@
         <p>Aplicația folosește următorii procesatori de date. Fiecare are obligații contractuale GDPR de protecție a datelor:</p>
         <ul>
             <li><strong>Firebase (Google LLC)</strong> - Stocare confirmare acceptare Termeni și Condiții, crash reporting
-                <br>Date colectate: Android ID (pseudonim anonim), timestamp acceptare, versiune aplicație, log data crash-uri
-                <br>Bază legală GDPR: Art. 6.1.f - Interes legitim (documentare acceptare ToS și debugging)
+                <br>Date colectate: Android ID (pseudonim anonim), timestamp acceptare, versiune aplicație, device info (brand, model, OS version, app install ID), log data crash-uri
+                <br>Bază legală GDPR: Art. 6.1.f - Interes legitim (documentare acceptare ToS, identificare indirectă pentru reclamații, debugging)
                 <br>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
             </li>
             <li><strong>Google AdMob</strong> - Afișare reclame publicitare în versiunea gratuită
